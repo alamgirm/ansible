@@ -1,7 +1,6 @@
 ---
-- hosts: "{{ target | default('localhost') }}"
+# Helloworld
+- hosts: test-servers # "{{ target }}"
   become: yes
   roles:
      - helloworld
-
-
