@@ -11,8 +11,8 @@
 
 - name: Copying the upstart file
   copy:
-     src: helloworld.conf
-     dest: /etc/init/helloworld.conf
+     src: helloworld.service
+     dest: /etc/systemd/system/helloworld.service
      owner: root
      group: root
      mode: 0644
